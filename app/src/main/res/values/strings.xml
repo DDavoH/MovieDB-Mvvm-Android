@@ -5,5 +5,19 @@
 
 
     <string name="popular_tile">Populares</string>
-    <string name="viewed_tile">Vistas</string>
+    <string name="viewed_tile">Favoritas</string>
+
+    <string name="favorite_movie_add">Añadir a favoritos</string>
+    <string name="favorite_movie_delete">Eliminar de favoritos</string>
+
+    <string name="message_success">Exito</string>
+    <string name="message_error">Lo sentimos</string>
+
+    <string name="favorite_movie_add_error">Ya tiene esta pelicula en favoritos</string>
+    <string name="favorite_movie_add_success">Su pelicula se ha guardado correctamente en favoritos</string>
+
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="menu_movies">Peliculas</string>
+    <string name="menu_ubications">Lugares</string>
 </resources>

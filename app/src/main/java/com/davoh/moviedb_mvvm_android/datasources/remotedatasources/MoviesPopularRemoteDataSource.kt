@@ -9,7 +9,7 @@ import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject
 
-class GetPopularMoviesRemoteDataSource @Inject constructor(private val apiServices: APIServices) {
+class MoviesPopularRemoteDataSource @Inject constructor(private val apiServices: APIServices) {
     
     fun getPopularMovies(pageNumer:Int) : Observable<GetPopularResponse> {
         return apiServices.getPopular(apiKey,language, pageNumer).observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io())

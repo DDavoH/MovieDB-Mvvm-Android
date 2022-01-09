@@ -28,6 +28,7 @@ fun List<GetPopularResponseMovieLst>.toDomainMovie(): List<Movie> = this.map {
         it.title ?: "",
         it.video ?: false,
         it.vote_average ?: 0.0,
-        it.vote_count ?: 0
+        it.vote_count ?: 0,
+        0
     )
 }

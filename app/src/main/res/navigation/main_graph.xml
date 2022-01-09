@@ -3,21 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/moviesHomeFragment">
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.davoh.moviedb_mvvm_android.presentation.home.HomeFragment"
-        android:label=""
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_movieDetailFragment"
-            app:destination="@id/movieDetailFragment" >
-        </action>
-    </fragment>
     <fragment
         android:id="@+id/movieDetailFragment"
         android:name="com.davoh.moviedb_mvvm_android.presentation.movieDetails.MovieDetailFragment"
         android:label=""
         tools:layout="@layout/fragment_movie_detail" />
+    <fragment
+        android:id="@+id/placesFragment"
+        android:name="com.davoh.moviedb_mvvm_android.presentation.placesHome.PlacesHomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_places" />
+    <fragment
+        android:id="@+id/moviesHomeFragment"
+        android:name="com.davoh.moviedb_mvvm_android.presentation.moviesHome.MoviesHomeFragment"
+        android:label="fragment_movies_home"
+        tools:layout="@layout/fragment_movies_home" >
+        <action
+            android:id="@+id/action_moviesHomeFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
 </navigation>

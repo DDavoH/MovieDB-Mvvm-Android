@@ -1,6 +1,5 @@
-package com.davoh.moviedb_mvvm_android.presentation.home.adapters
+package com.davoh.moviedb_mvvm_android.presentation.moviesHome.adapters
 
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -13,7 +12,7 @@ import com.davoh.moviedb_mvvm_android.data.Movie
 import com.davoh.moviedb_mvvm_android.databinding.ItemMoviePopularBinding
 import com.davoh.moviedb_mvvm_android.datasources.constants.Constants.imageUrl
 
-class PopularMovieAdapter : ListAdapter<Movie, RecyclerView.ViewHolder>(DiffCallback()) {
+class MovieAdapter : ListAdapter<Movie, RecyclerView.ViewHolder>(DiffCallback()) {
     
     private var listener: OnItemClickListener ?= null
     
@@ -31,10 +30,7 @@ class PopularMovieAdapter : ListAdapter<Movie, RecyclerView.ViewHolder>(DiffCall
             binding.titleMovie.text = item.title
             Glide.with(binding.root)
                 .load("${imageUrl}${item.posterPath}")
-                //.circleCrop()
-                //.placeholder(R.drawable.ic_no_photo)
-                .apply(RequestOptions.skipMemoryCacheOf(true))
-                .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.NONE))
+                .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.ALL))
                 .into(binding.poster)
             binding.poster.setOnClickListener {
                 listener?.onItemClick(item)
