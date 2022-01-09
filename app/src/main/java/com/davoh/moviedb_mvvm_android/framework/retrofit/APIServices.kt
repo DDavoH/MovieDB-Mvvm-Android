@@ -7,11 +7,15 @@ import okhttp3.ResponseBody
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface APIServices {
     
-    @GET("movie/popular?api_key={api_key}&language=en-US&page={page_num}")
-    fun getPopular(@Path("api_key") apiKey : String, @Path("page_num") pageNum: Int): Observable<GetPopularResponse>
+    @GET("movie/popular")
+    fun getPopular(
+        @Query("api_key") apiKey : String,
+        @Query("language") languaje:String,
+        @Query("page") pageNum: Int): Observable<GetPopularResponse>
     
     
     

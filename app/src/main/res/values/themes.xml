@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MovieDB_MVVM_Android" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MovieDB_MVVM_Android" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,4 +13,64 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- TextView -->
+    <style name="TextViewTitle" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewTitleWith0dp" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewSubtitle" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextViewSubtitleWith0dp" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="TextViewSubSubTitleWith0dp" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Imageview -->
+    <style name="ImageViewPoster" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">@dimen/posterHeight</item>
+        <item name="android:layout_width">@dimen/posterWidth</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ImageViewPosterDetail" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">@dimen/posterminiHeight</item>
+        <item name="android:layout_width">@dimen/posterminiWidth</item>
+    </style>
+
+    <!-- Recyclerview -->
+    <style name="RecyclerViewWith0dp" parent="Theme.MovieDB_MVVM_Android">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
 </resources>

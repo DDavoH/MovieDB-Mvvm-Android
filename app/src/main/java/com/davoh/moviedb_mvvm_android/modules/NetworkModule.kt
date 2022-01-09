@@ -4,7 +4,7 @@ import com.davoh.moviedb_mvvm_android.framework.retrofit.APIServices
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.components.SingletonComponent
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -15,7 +15,7 @@ import java.lang.RuntimeException
 import java.util.concurrent.TimeUnit
 
 @Module
-@InstallIn(ActivityComponent::class)
+@InstallIn(SingletonComponent::class)
 class NetworkModule {
     
     @Provides
@@ -30,11 +30,11 @@ class NetworkModule {
     }
     
     @Provides
-    fun provideUnsafeOkHttpClient(): OkHttpClient? {
+    fun provideUnsafeOkHttpClient(): OkHttpClient {
         return provideUnsafeOkHttpClientTimeOut(25000L)
     }
     
-    private fun provideUnsafeOkHttpClientTimeOut(milliseconds: Long?): OkHttpClient? {
+    private fun provideUnsafeOkHttpClientTimeOut(milliseconds: Long?): OkHttpClient {
         return try {
             val builder = OkHttpClient.Builder()
             val interceptor = HttpLoggingInterceptor()

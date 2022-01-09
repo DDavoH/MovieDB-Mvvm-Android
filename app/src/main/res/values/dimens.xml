@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="posterHeight">300dp</dimen>
+    <dimen name="posterWidth">200dp</dimen>
+    <dimen name="posterminiHeight">200dp</dimen>
+    <dimen name="posterminiWidth">140dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="minus_space">5dp</dimen>
+    <dimen name="medium_space">15dp</dimen>
+</resources>
