@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.moviesHome.MoviesHomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gd_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.05"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gd_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_popular_title"
+                style="@style/TextViewTitle"
+                tools:text="Populares"
+                android:text="@string/popular_tile"
+                app:layout_constraintTop_toBottomOf="@id/gd_top"
+                app:layout_constraintStart_toStartOf="@id/gd_start"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_popular"
+                style="@style/RecyclerViewWith0dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_popular_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_viewed"
+                style="@style/TextViewTitle"
+                tools:text="Vistas"
+                android:text="@string/viewed_tile"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/rv_popular"
+                app:layout_constraintStart_toStartOf="@id/gd_start"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_viewed"
+                style="@style/RecyclerViewWith0dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_viewed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/loader_layout"
+        tools:visibility="gone"
+        layout="@layout/loader"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

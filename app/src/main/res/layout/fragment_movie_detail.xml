@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.movieDetails.MovieDetailFragment">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <ImageView
+        android:id="@+id/poster"
+        style="@style/ImageViewPosterDetail"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_include"
+        app:layout_constraintStart_toStartOf="@id/gd_start"
+        android:layout_marginTop="@dimen/medium_space"
+        />
+
+    <TextView
+        android:id="@+id/movie_title"
+        style="@style/TextViewTitleWith0dp"
+        tools:text="Batman es una pelicula muy larga"
+        app:layout_constraintStart_toEndOf="@id/poster"
+        app:layout_constraintTop_toTopOf="@id/poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/medium_space"
+        />
+
+    <TextView
+        android:id="@+id/movie_overview"
+        style="@style/TextViewSubSubTitleWith0dp"
+        tools:text="Batman es una pelicula muy largaaa"
+        app:layout_constraintTop_toBottomOf="@id/movie_title"
+        app:layout_constraintStart_toEndOf="@id/poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/medium_space"
+        />
+
+    <ImageView
+        android:id="@+id/icon_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        app:layout_constraintTop_toBottomOf="@id/poster"
+        app:layout_constraintStart_toStartOf="@id/gd_start"
+        android:layout_margin="@dimen/medium_space"
+        app:tint="@color/yellow" />
+
+    <TextView
+        android:id="@+id/movie_rating"
+        style="@style/TextViewSubtitleWith0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7.8"
+        app:layout_constraintStart_toEndOf="@id/icon_star"
+        app:layout_constraintTop_toTopOf="@id/icon_star"
+        app:layout_constraintBottom_toBottomOf="@id/icon_star"/>
+
+    <Button
+        android:id="@+id/btn_add_favorite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/movie_overview"
+        app:layout_constraintTop_toBottomOf="@id/movie_overview"
+        app:layout_constraintEnd_toEndOf="@id/movie_overview"
+        tools:text="Eliminar de favoritos"
+        android:layout_marginTop="@dimen/medium_space"
+        />
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

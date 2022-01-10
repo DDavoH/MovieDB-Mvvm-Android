@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "840501321973",
+    "project_id": "moviedb-b78e4",
+    "storage_bucket": "moviedb-b78e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840501321973:android:b195ded7d5f6287d9165bc",
+        "android_client_info": {
+          "package_name": "com.davoh.moviedb_mvvm_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840501321973-lvfd7uesf785v2ocird8e3927mm7b3cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.davoh.moviedb_mvvm_android",
+            "certificate_hash": "5d60a219b46ef3a16a8eb4c539b499e904dc8493"
+          }
+        },
+        {
+          "client_id": "840501321973-r75igk0t1jqjegjdt1rv0p6k8eft5frk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC3vCAVoDbL7haPu9Wn69TzRtht4ExTu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840501321973-r75igk0t1jqjegjdt1rv0p6k8eft5frk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

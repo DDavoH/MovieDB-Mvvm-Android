@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MovieDB_MVVM_Android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="popular_tile">Populares</string>
+    <string name="viewed_tile">Favoritas</string>
+
+    <string name="favorite_movie_add">Añadir a favoritos</string>
+    <string name="favorite_movie_delete">Eliminar de favoritos</string>
+
+    <string name="message_success">Exito</string>
+    <string name="message_error">Lo sentimos</string>
+
+    <string name="favorite_movie_add_error">Ya tiene esta pelicula en favoritos</string>
+    <string name="favorite_movie_add_success">Su pelicula se ha guardado correctamente en favoritos</string>
+
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="menu_movies">Peliculas</string>
+    <string name="menu_ubications">Lugares</string>
+
+    <string name="notification_title">Se esta utilizando su ubicacion</string>
+    <string name="notification_content">Cada 10 minutos se actualizara en la base de datos</string>
+    <string name="notification_content_end">Toca para dejar de compartir ubicación</string>
+
+    <string name="notification_channel_id">Ubicaciones</string>
+    <string name="notification_channel_description">Enviar ubicacion a base de datos</string>
+    <string name="notification_channel_group">ubicaciones_group</string>
+
+    <string name="notification_id">244</string>
+    <string name="alarm_id">566</string>
+    <string name="alarm_close_id">565</string>
+
+</resources>
