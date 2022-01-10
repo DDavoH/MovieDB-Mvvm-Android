@@ -42,7 +42,7 @@ class LocationRemoteDataSource @Inject constructor(private val firestore: Fireba
      
         firestore.collection("ubications")
             .orderBy("created_date", Query.Direction.DESCENDING)
-            .limit(10)
+            .limit(30)
             .addSnapshotListener { snapshot, e ->
             
                 if (e != null) {
