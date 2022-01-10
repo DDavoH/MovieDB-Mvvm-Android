@@ -7,5 +7,5 @@ object Constants {
     val counterFindLocation = 10000L
     
     //Colocar esta variable en local.properties para configurar el google maps
-    //MAPS_API_KEY=AIzaSyDC3vCAVoDbL7haPu9Wn69TzRtht4ExTu0
+    //MAPS_API_KEY=
 }
