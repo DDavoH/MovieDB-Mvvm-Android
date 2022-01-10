@@ -1,6 +1,10 @@
 package com.davoh.moviedb_mvvm_android.modules
 
+import com.davoh.moviedb_mvvm_android.datasources.remotedatasources.LocationRemoteDataSource
 import com.davoh.moviedb_mvvm_android.framework.retrofit.APIServices
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -49,6 +53,16 @@ class NetworkModule {
         } catch (e: Exception) {
             throw RuntimeException(e)
         }
+    }
+    
+    
+    @Provides
+    fun provideFirestoreDatabase(): FirebaseFirestore {
+        return Firebase.firestore
+    }
+    @Provides
+    fun providePositionRemoteDataSource(firestore: FirebaseFirestore):LocationRemoteDataSource{
+        return LocationRemoteDataSource(firestore)
     }
     
     

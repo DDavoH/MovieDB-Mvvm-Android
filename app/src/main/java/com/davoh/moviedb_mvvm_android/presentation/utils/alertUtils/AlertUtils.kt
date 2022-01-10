@@ -1,4 +1,4 @@
-package com.davoh.moviedb_mvvm_android.presentation.utils
+package com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils
 
 import android.content.Context
 import androidx.fragment.app.FragmentManager

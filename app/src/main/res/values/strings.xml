@@ -20,4 +20,17 @@
     <string name="dialog_cancel">Cancelar</string>
     <string name="menu_movies">Peliculas</string>
     <string name="menu_ubications">Lugares</string>
+
+    <string name="notification_title">Se esta utilizando su ubicacion</string>
+    <string name="notification_content">Cada 10 minutos se actualizara en la base de datos</string>
+    <string name="notification_content_end">Toca para dejar de compartir ubicación</string>
+
+    <string name="notification_channel_id">Ubicaciones</string>
+    <string name="notification_channel_description">Enviar ubicacion a base de datos</string>
+    <string name="notification_channel_group">ubicaciones_group</string>
+
+    <string name="notification_id">244</string>
+    <string name="alarm_id">566</string>
+    <string name="alarm_close_id">565</string>
+
 </resources>

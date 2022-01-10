@@ -1,10 +1,10 @@
-package com.davoh.moviedb_mvvm_android.presentation.utils;
+package com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils;
 
-import static com.davoh.moviedb_mvvm_android.presentation.utils.AlertEvent.CANCEL;
-import static com.davoh.moviedb_mvvm_android.presentation.utils.AlertEvent.CREATE;
-import static com.davoh.moviedb_mvvm_android.presentation.utils.AlertEvent.DISMISS;
-import static com.davoh.moviedb_mvvm_android.presentation.utils.AlertEvent.NEGATIVE;
-import static com.davoh.moviedb_mvvm_android.presentation.utils.AlertEvent.POSITIVE;
+import static com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.AlertEvent.CANCEL;
+import static com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.AlertEvent.CREATE;
+import static com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.AlertEvent.DISMISS;
+import static com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.AlertEvent.NEGATIVE;
+import static com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.AlertEvent.POSITIVE;
 
 import javax.annotation.Nonnull;
 

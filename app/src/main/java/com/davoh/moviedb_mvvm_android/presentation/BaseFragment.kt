@@ -4,27 +4,15 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentContainerView
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.davoh.moviedb_mvvm_android.data.messageAlert.MessageAlert
 import com.davoh.moviedb_mvvm_android.data.messageAlert.MessageAlertTypeError
-import com.davoh.moviedb_mvvm_android.presentation.utils.Alert
-import com.davoh.moviedb_mvvm_android.presentation.utils.AlertUtils
-import com.davoh.moviedb_mvvm_android.presentation.utils.DefaultAlertListener
+import com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.Alert
+import com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.AlertUtils
+import com.davoh.moviedb_mvvm_android.presentation.utils.alertUtils.DefaultAlertListener
 import timber.log.Timber
-import com.google.android.material.bottomnavigation.BottomNavigationView
-
-import androidx.navigation.Navigation
-import androidx.navigation.ui.NavigationUI
-
-import android.R
-
-import androidx.navigation.NavController
-
-
-
 
 
 open class BaseFragment : Fragment() {
